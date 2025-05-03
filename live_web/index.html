@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Work Mates Solution - Your trusted partner for HR services in Luxembourg. We offer professional recruitment, work permit processing, and comprehensive HR solutions.">
+    <meta name="keywords" content="HR services, recruitment agency Luxembourg, work permit processing, job placement, HR consulting, employment solutions">
+    <meta name="author" content="Work Mates Solution">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://workmatessolution.eu/">
+    <meta property="og:title" content="Work Mates Solution - Professional HR Services">
+    <meta property="og:description" content="Leading HR solutions provider in Luxembourg offering recruitment, work permit processing, and comprehensive HR services.">
+    <meta property="og:image" content="assets/OG.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://workmatessolution.eu/">
+    <meta property="twitter:title" content="Work Mates Solution - Professional HR Services">
+    <meta property="twitter:description" content="Leading HR solutions provider in Luxembourg offering recruitment, work permit processing, and comprehensive HR services.">
+    <meta property="twitter:image" content="assets/OG.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/fav512.svg">
+
+    <title>Work Mates Solution - Professional HR Services in Luxembourg</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <!-- Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.js"></script>
+</head>
+<body>
+
+<a href="https://wa.me/3197010210817" target="_blank" class="whatsapp-btn">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="assets/logo.svg" onerror="this.src='assets/logo.png'" alt="Work Mates Solution Logo" width="100%" height="38"></a></div>
+            <div class="btns-wrapper">
+                <div class="language-dropdown">
+                    <button class="btn btnv1">
+                        <span id="current-lang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="nl">Dutch</a>
+                        <a href="#" data-lang="lb">Luxembourgish</a>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btnv1"><span class="translate" data-key="contact_us">Contact Us</span></a>
+                <a href="careers.html" class="btn btnv2"><span class="translate" data-key="careers">Careers</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image">
+            <div class="image">
+                <img data-parallax src="assets/her.webp" alt="Hero Image">
+            </div>
+            <div class="hero-content">
+                <h1 class="translate" data-key="hero_title">REDEFINING THE FUTURE OF MANPOWER SOLUTIONS</h1>
+                <p class="translate" data-key="hero_subtitle">PARTNERING YOUR BUSINESS WITH THE INDUSTRY'S FINEST</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome">
+        <div class="welcome-text">
+            <h2><span class="translate" data-key="welcome">WELCOME TO</span><br><span class="translate" data-key="company_name">WORK MATES SOLUTION</span></h2>
+            <p class="translate" data-key="welcome_description">A reliable HR solutions provider that has supported the recruitment and staffing needs of companies across industries. We have a proven track record of delivering exceptional HR solutions. Our team is highly proficient in identifying and placing the right talent for your organization.</p>
+            <a href="#contact" class="btn btnv1"><span class="translate" data-key="contact_us">Contact Us</span></a>
+        </div>
+        <div class="welcome-image">
+            <div class="image">
+                <img data-parallax src="assets/hero.webp" alt="Team Meeting">
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2><span class="translate" data-key="why_choose_us">WHY CHOOSE</span><br><span class="translate" data-key="company_name">WORK MATES SOLUTION</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-users"></i>
+                <h3 class="translate" data-key="skilled_hr_title">SKILLED HR PROFESSIONALS</h3>
+                <p class="translate" data-key="skilled_hr_desc">Our team consists of experienced HR professionals who understand your staffing needs</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3 class="translate" data-key="track_record_title">PROVEN TRACK RECORD</h3>
+                <p class="translate" data-key="track_record_desc">We have successfully placed thousands of candidates across various industries</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-clock"></i>
+                <h3 class="translate" data-key="quick_time_title">QUICK TURNAROUND TIME</h3>
+                <p class="translate" data-key="quick_time_desc">We ensure swift recruitment process without compromising on quality</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-handshake"></i>
+                <h3 class="translate" data-key="comprehensive_title">COMPREHENSIVE SERVICES</h3>
+                <p class="translate" data-key="comprehensive_desc">From recruitment to HR consulting, we offer end-to-end HR solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hr-services">
+        <div class="hr-image">
+            <div class="image">
+                <img data-parallax src="assets/hr.webp" alt="Team Meeting">
+            </div>
+        </div>
+        <div class="hr-text">
+            <h2 class="translate" data-key="hr_services">HUMAN RESOURCES SERVICES</h2>
+            <p class="translate" data-key="hr_services_desc">We offer comprehensive HR solutions tailored to meet your organization's unique needs</p>
+            <a href="#contact" class="btn btnv1"><span class="translate" data-key="get_in_touch">Get in touch</span></a>
+        </div>
+    </section>
+
+    <section class="our-services">
+        <h2 class="translate" data-key="our_services">OUR SERVICES</h2>
+        <h3 class="translate" data-key="what_we_do">What we can do for you?</h3>
+        <section class="services-grid-enhanced">
+            <!-- HR Consulting -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-comments-dollar fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="hr_consulting_title">HR Consulting</h4>
+                <p class="translate" data-key="hr_consulting_desc">Expert guidance to optimize your HR practices and align them with business objectives</p>
+            </div>
+
+            <!-- Strategic Planning -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-bullseye fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="strategic_planning_title">Strategic Planning</h4>
+                <p class="translate" data-key="strategic_planning_desc">Develop comprehensive workforce strategies for long-term organizational success</p>
+            </div>
+
+            <!-- Employee Training -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="employee_training_title">Employee Training</h4>
+                <p class="translate" data-key="employee_training_desc">Customized development programs to enhance workforce capabilities and productivity</p>
+            </div>
+
+            <!-- Leadership Training -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-chess-king fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="leadership_training_title">Leadership Training</h4>
+                <p class="translate" data-key="leadership_training_desc">Executive development programs to cultivate effective leadership and decision-making</p>
+            </div>
+
+            <!-- Work Permit Processing -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-passport fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="work_permit_title">Work Permit Processing</h4>
+                <p class="translate" data-key="work_permit_desc">Comprehensive assistance with work permit applications and documentation for foreign workers</p>
+            </div>
+
+            <!-- Corporate Program -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-building fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="corporate_program_title">Corporate Program</h4>
+                <p class="translate" data-key="corporate_program_desc">Tailored organizational development initiatives to foster corporate excellence</p>
+            </div>
+
+            <!-- Job Offer Letter -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-file-contract fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="job_offer_title">Job Offer Letter</h4>
+                <p class="translate" data-key="job_offer_desc">Professional preparation and processing of employment offer letters and contracts by Multinational companies of Luxembourg</p>
+            </div>
+
+            <!-- Compensation Consulting -->
+            <div class="service-card-enhanced">
+                <div class="icon-container">
+                    <i class="fas fa-money-bill-wave fa-3x"></i>
+                </div>
+                <h4 class="translate" data-key="compensation_title">Compensation Consulting</h4>
+                <p class="translate" data-key="compensation_desc">Design competitive compensation structures to attract and retain top talent</p>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-form">
+            <h3 class="translate" data-key="send_message">SEND A MESSAGE</h3>
+            <div id="successPopup" class="success-popup" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <span class="translate" data-key="success_message">Message sent successfully!</span>
+            </div>
+
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button class="btn btnv1" type="submit"><span class="translate" data-key="submit">Submit</span></button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2 class="translate" data-key="get_the_best">GET THE BEST HUMAN RESOURCES RECRUITING SERVICES & MORE</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="number">1190</span>
+                    <span class="label translate" data-key="successful_placements">Successful Placements</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">800</span>
+                    <span class="label translate" data-key="reviews">Reviews</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">82</span>
+                    <span class="label translate" data-key="active_projects">Active Projects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+            <img src="assets/footer.svg" onerror="this.src='assets/footer.png'" alt="Work Mates Solution Logo" width="100%" height="100%">
+            </div>
+            <div class="footer-info">
+                <p class="translate" data-key="rights_reserved">© 2025 WORK MATES SOLUTION. All rights reserved.</p>
+                <div class="contact-details">
+                    <p>info@workmatessolution.eu</p>
+                    <p>+31 970 102 10817</p>
+                </div>
+                <div class="social-links">
+                    <!-- Social links can be added here -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="mobile-nav">
+        <a href="#contact">
+            <i class="fas fa-envelope"></i>
+            <span class="translate" data-key="contact_us">Contact Us</span>
+        </a>
+        <a href="careers.html">
+            <i class="fas fa-briefcase"></i>
+            <span class="translate" data-key="careers">Careers</span>
+        </a>
+        <a href="#" id="mobileLangBtn">
+            <i class="fas fa-globe"></i>
+            <span id="mobile-current-lang">EN</span>
+        </a>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Translations JS -->
+    <script src="translations.js"></script>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+
+    <!-- Direct Supabase initialization -->
+    <script>
+    // Initialize Supabase directly for better compatibility
+    const SUPABASE_URL = 'https://zgasitovbkoyjhgocdss.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpnYXNpdG92YmtveWpoZ29jZHNzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYxMjEyODcsImV4cCI6MjA2MTY5NzI4N30.pcVo1BG30vOSGguKT6kPyUY36XThD5tGTALGHdV3fac';
+
+    // Create Supabase client
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const popup = document.getElementById('successPopup');
+
+        const formData = new FormData(e.target);
+        const contactData = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            message: formData.get('message')
+        };
+
+        const submitBtn = e.target.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = getCurrentLanguage() === 'nl' ? 'Verzenden...' : 'Sending...';
+
+        try {
+            // Submit to Supabase
+            const { error } = await supabase
+                .from('contacts')
+                .insert([contactData]);
+
+            if (error) throw error;
+
+            // Show success message
+            popup.style.display = 'flex';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 3000);
+            e.target.reset();
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Error submitting form. Please try again.');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = translations[getCurrentLanguage()]['submit'];
+        }
+    });
+
+    // Mobile language switcher
+    document.getElementById('mobileLangBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        const langs = ['en', 'nl', 'lb'];
+        const currentLang = getCurrentLanguage();
+        const nextLang = langs[(langs.indexOf(currentLang) + 1) % langs.length];
+
+        // Update the display immediately
+        document.getElementById('mobile-current-lang').textContent = nextLang.toUpperCase();
+
+        // Change the language
+        setLanguage(nextLang);
+
+        // Reload the page
+        window.location.reload();
+    });
+    </script>
+</body>
+</html>
